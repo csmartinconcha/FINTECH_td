@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_26_164308) do
+ActiveRecord::Schema.define(version: 2022_03_26_184323) do
+
+  create_table "typeusers", force: :cascade do |t|
+    t.string "cd_user"
+    t.string "type_user"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

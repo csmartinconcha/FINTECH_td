@@ -1,0 +1,2 @@
+class Typeuser < ApplicationRecord
+end
